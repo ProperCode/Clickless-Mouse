@@ -5,8 +5,8 @@ ClickLess Mouse makes using computer easier for people with repetitive strain in
 some motor disabilities and other health problems.
 
 This application allows to use mouse without clicking - by moving it only.<br/>
-It simulates left/right mouse click, double left mouse click and mouse button holding by moving mouse only.<br/>
-It can be used with Free Virtual Keyboard to type by moving mouse only ( https://freevirtualkeyboard.com/ ).
+It simulates left/right mouse click, double left mouse click and mouse button holding by moving mouse.<br/>
+It can be used with Free Virtual Keyboard to type by moving mouse (https://freevirtualkeyboard.com/).
 
 When you want to click/hold mouse button: stop moving mouse, wait for squares to appear and move mouse cursor to the chosen square:
 - Top square is for double left mouse button click
