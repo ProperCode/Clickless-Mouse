@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\bin\Debug\ClickLess Mouse 2.01.exe.config
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\bin\Debug\ClickLess Mouse 2.01.exe
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\bin\Debug\ClickLess Mouse 2.01.pdb
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess Mouse.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess_Mouse.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess_Mouse.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess_Mouse.Square.resources
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess Mouse.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess Mouse.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess Mouse 2.01.exe
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse\ClickLess Mouse\obj\Debug\ClickLess Mouse 2.01.pdb
