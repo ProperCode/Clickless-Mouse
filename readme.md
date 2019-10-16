@@ -22,8 +22,8 @@ If mouse cursor is too close to top edge of the screen, squares for LMB, RMB and
 
 Squares that aren't needed can be disabled.
 
-![alt text](https://raw.githubusercontent.com/kathunos/clickless-mouse/master/ClickLess%20Mouse/Program/1.jpg)
-![alt text](https://raw.githubusercontent.com/kathunos/clickless-mouse/master/ClickLess%20Mouse/Program/2.jpg)
+![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/ClickLess%20Mouse/Program/1.jpg)
+![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/ClickLess%20Mouse/Program/2.jpg)
 
 # ClickLess Mouse 2.01
 
