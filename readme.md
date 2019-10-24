@@ -4,13 +4,12 @@
 Supports Windows XP, 2003, Vista, 2008, 7, 8, 8.1, 10<br/>
 Works only in programs and games that are run in borderless or windowed mode (fullscreen mode is not supported)<br/>
 
-## Download latest version (in English and Polish)
+## Download latest version
+Languages: English, Polish
 [Clickless Mouse 2.02 installer](https://github.com/ProperCode/clickless-mouse/blob/master/Download/Clickless%20Mouse%202.02.exe)<br/>
 [Clickless Mouse 2.02 zip](https://github.com/ProperCode/clickless-mouse/blob/master/Download/Clickless%20Mouse%202.02.zip)
 
 ## Description
-
-This program is for disabled people.<br/>
 
 Clickless Mouse makes using a computer easier for people with repetitive strain injury, carpal tunnel syndrome, 
 some motor disabilities and other health problems.<br/>
