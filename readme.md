@@ -1,7 +1,7 @@
 # Clickless Mouse
 
 ## Requirements
-**Supports:** Windows XP, 2003, Vista, 2008, 7, 8, 8.1, 10<br/>
+**OS:** Windows XP, 2003, Vista, 2008, 7, 8, 8.1, 10<br/>
 Works only in programs and games that are run in borderless or windowed mode (fullscreen mode is not supported)<br/>
 
 ## Download latest version
