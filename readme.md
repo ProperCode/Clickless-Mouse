@@ -5,8 +5,8 @@ Supports Windows XP, 2003, Vista, 2008, 7, 8, 8.1, 10<br/>
 Works only in programs and games that are run in borderless or windowed mode (fullscreen mode is not supported)<br/>
 
 ## Download latest version
-[Clickless Mouse 2.02 installer]()
-[Clickless Mouse 2.02 zip]()
+[Clickless Mouse 2.02 installer](https://github.com/ProperCode/clickless-mouse/blob/master/Download/Clickless%20Mouse%202.02.exe)
+[Clickless Mouse 2.02 zip](https://github.com/ProperCode/clickless-mouse/blob/master/Download/Clickless%20Mouse%202.02.zip)
 
 ## Description
 
