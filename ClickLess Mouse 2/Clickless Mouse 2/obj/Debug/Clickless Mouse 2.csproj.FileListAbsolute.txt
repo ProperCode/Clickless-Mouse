@@ -1,0 +1,18 @@
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\bin\Debug\Clickless Mouse 2.02.exe
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\bin\Debug\Clickless Mouse 2.02.pdb
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Instructions.g.cs
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\App.g.cs
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.02_MarkupCompile.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.02_MarkupCompile.lref
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\MainWindow.baml
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Instructions.baml
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.02.g.resources
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless_Mouse_2.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless_Mouse_2.Square.resources
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.02.exe
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.02.pdb
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\obj\Debug\Clickless Mouse 2.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\ClickLess Mouse 2\Clickless Mouse 2\bin\Debug\Clickless Mouse 2.02.exe.config
