@@ -67,6 +67,13 @@ Screen panning - when this mode is on, moving the mouse curor to the edges of th
 - Border width [px]: 1
 - Minimum size [%]: 10
 
+**Clickless Mouse usage by healthy people**
+If any mouse button is broken you can use Clickless Mouse until you buy a new mouse. 
+Should left mouse button be damaged in order to run this application press CTRL + Esc, 
+type Clickless Mouse and press Enter.
+This program can also provide completly silent mouse operation with reduced effort required
+from user.
+
 ![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/Download/images/2en.jpg)
 
 ## Awards
