@@ -67,7 +67,7 @@ Screen panning - when this mode is on, moving the mouse curor to the edges of th
 - Border width [px]: 1
 - Minimum size [%]: 10
 
-###### **Clickless Mouse usage by healthy people**
+**Clickless Mouse usage by healthy people<br/>
 If any mouse button is broken you can use Clickless Mouse until you buy a new mouse.<br/>
 Should left mouse button be damaged press CTRL + Esc, type Clickless Mouse and press Enter 
 to run this application.<br/>
