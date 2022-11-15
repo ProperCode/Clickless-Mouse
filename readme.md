@@ -2,7 +2,7 @@
 
 ## Requirements
 **OS:** Windows XP, 2003, Vista, 2008, 7, 8, 8.1, 10<br/>
-You should run this program as an administrator or it will not work in locations that require administrator privileges. 
+You should run this program as an administrator or it will not work in locations that require administrator privileges.<br/> 
 Works only in programs and games that are run in borderless or windowed mode (fullscreen mode is not supported)<br/>
 
 ## Download latest version
