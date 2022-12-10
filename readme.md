@@ -24,8 +24,7 @@ double left mouse click and left/right mouse button holding. <br/>
 Clickless Mouse can be used with a virtual keyboard to type by moving mouse 
 (e.g. [Free Virtual Keyboard](https://freevirtualkeyboard.com/)). <br/>
 
-By using Clickless Mouse with a virtual keyboard the user can fully control a computer by moving mouse 
-with a palm, a forearm or a foot.<br/>
+By using Clickless Mouse with a virtual keyboard the user can fully control a computer without using a physical keyboard.<br/>
 
 When you want to click/hold a mouse button: stop moving the mouse, wait for the squares to appear and move the mouse cursor to the chosen square:
 - Top center square = double left mouse button click
