@@ -78,3 +78,6 @@ from user.
 
 ## Awards
 [![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/Download/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
+
+## Other projects
+[Work by Speech](https://www.workbyspeech.com/)<br/>
