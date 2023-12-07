@@ -1,7 +1,7 @@
 # Clickless Mouse
 
 ## Latest version
-[Download latest version](https://github.com/ProperCode/clickless-mouse/releases/tag/releases)<br/>
+[Download latest version](https://github.com/ProperCode/clickless-mouse/releases)<br/>
 
 **Languages:** English, Polish
 
