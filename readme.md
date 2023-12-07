@@ -1,6 +1,6 @@
 # Clickless Mouse
 
-## other latest version
+## Latest version
 [Clickless Mouse 2.02 installer](https://github.com/ProperCode/clickless-mouse/releases/tag/releases)<br/>
 
 **Languages:** English, Polish
