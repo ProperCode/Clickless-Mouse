@@ -1,0 +1,20 @@
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\bin\Debug\Clickless Mouse.exe.config
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\bin\Debug\Clickless Mouse.exe
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\bin\Debug\Clickless Mouse.pdb
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.csproj.AssemblyReference.cache
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\MainWindow.g.cs
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowChangelog.g.cs
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\App.g.cs
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse_MarkupCompile.cache
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse_MarkupCompile.lref
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\MainWindow.baml
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowChangelog.baml
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.g.resources
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless_Mouse.Properties.Resources.resources
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless_Mouse.Square.resources
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.csproj.GenerateResource.cache
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.csproj.CoreCompileInputs.cache
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.exe
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.pdb
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowManual.g.cs
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowManual.baml

@@ -1,12 +1,7 @@
 # Clickless Mouse
 
-## Requirements
-**OS:** Windows XP, 2003, Vista, 2008, 7, 8, 8.1, 10<br/>
-Works only in programs and games that are run in borderless or windowed mode (fullscreen mode is not supported)<br/>
-
-## Download latest version
-[Clickless Mouse 2.02 installer](https://github.com/ProperCode/clickless-mouse/blob/master/Download/Clickless%20Mouse%202.02.exe)<br/>
-[Clickless Mouse 2.02 zip](https://github.com/ProperCode/clickless-mouse/blob/master/Download/Clickless%20Mouse%202.02.zip)<br/>
+## other latest version
+[Clickless Mouse 2.02 installer](https://github.com/ProperCode/clickless-mouse/releases/tag/releases)<br/>
 
 **Languages:** English, Polish
 
@@ -33,7 +28,7 @@ When you want to click/hold a mouse button: stop moving the mouse, wait for the 
 - Left square = left mouse button holding on/off
 - Right square = right mouse button holding on/off<br/>
  
-![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/Download/images/1en.jpg) 
+![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/1en.jpg) 
 
 When the mouse cursor is located inside a square long enough (depending on cursor time 
 in square to register click setting), it automatically moves back to the previous position 
@@ -74,7 +69,13 @@ to run this application.<br/>
 This program can also provide completly silent mouse operation with reduced effort required
 from user.
 
-![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/Download/images/2en.jpg)
+![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/2en.jpg)
 
 ## Awards
-[![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/Download/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
+[![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
+
+## Other projects
+[Work by Speech](https://www.workbyspeech.com/)<br/>
+
+## Projects for sale
+[Work by Speech](https://www.sideprojectors.com/project/38542/work-by-speech)<br/>
