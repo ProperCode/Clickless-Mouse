@@ -12,8 +12,8 @@ some motor disabilities and other health problems.<br/>
 
 This application allows to use a mouse without clicking - by moving it only.<br/>
 
-By reacting to user mouse movements this program simulates left/right mouse click, 
-double left mouse click and left/right mouse button holding. <br/>
+By reacting to user mouse movements this program simulates left/right mouse button click, 
+double left mouse button click and left/right mouse button holding. <br/>
 
 Clickless Mouse can be used with a virtual keyboard to type by moving mouse 
 (e.g. [Free Virtual Keyboard](https://freevirtualkeyboard.com/)). <br/>
