@@ -15,7 +15,7 @@ This application allows using a mouse without clicking - by moving it only.<br/>
 By reacting to user mouse movements this program simulates left/right mouse button click, 
 double left mouse button click and left/right mouse button holding. <br/>
 
-Clickless Mouse can be used with a virtual keyboard to type by moving mouse 
+Clickless Mouse can be used with a virtual keyboard to type by moving a mouse 
 (e.g. [Free Virtual Keyboard](https://freevirtualkeyboard.com/)). <br/>
 
 By using Clickless Mouse with a virtual keyboard a user can fully control a computer by moving a mouse.<br/>
