@@ -10,7 +10,7 @@
 Clickless Mouse makes using a computer easier for people with repetitive strain injury, carpal tunnel syndrome, 
 some motor disabilities and other health problems.<br/>
 
-This application allows to use a mouse without clicking - by moving it only.<br/>
+This application allows using a mouse without clicking - by moving it only.<br/>
 
 By reacting to user mouse movements this program simulates left/right mouse button click, 
 double left mouse button click and left/right mouse button holding. <br/>
