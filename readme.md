@@ -44,15 +44,15 @@ the screen that smallest size isn't enough to show a square.<br/>
 
 The squares that aren't needed can be disabled.<br/>
 
-Screen panning - when this mode is on, moving the mouse curor to the edges of the screen presses keys:
+Screen panning - when this mode is on, moving the mouse cursor to the edges of the screen presses keys:
  up (top edge), down (bottom edge), left (left edge), right (right edge). While screen panning is enabled 
  the squares don't show when the mouse cursor is located at the screen edge.<br/>
 
 **First steps:**
-1. Type your diagonal screen size and press 'Set recommended square size button'.
-2. Decide which mouse functionality you need. Most users need 'LMB Click', 'RMB click, 'LMB click', 'LMB double click' and 'LMB holding'.
-3. If you have a motor disability consider increasing 'Cursor idle time before squares appear', 
-'Time to start mouse movement after squares appear' and 'Square size'.<br/>
+1. Type your diagonal screen size and press "Set recommended square size button".
+2. Decide which mouse functionality you need. Most users need "LMB Click", "RMB click", "LMB click", "LMB double click" and "LMB holding".
+3. If you have a motor disability consider increasing "Cursor idle time before squares appear", 
+"Time to start mouse movement after squares appear" and "Square size".<br/>
 
 **Lowest possible values (the program ignores lower values and uses following values instead):**
 - Cursor idle time before squares appear [ms]: 100
@@ -66,8 +66,8 @@ Screen panning - when this mode is on, moving the mouse curor to the edges of th
 If any mouse button is broken you can use Clickless Mouse until you buy a new mouse.<br/>
 Should left mouse button be damaged press CTRL + Esc, type Clickless Mouse and press Enter 
 to run this application.<br/>
-This program can also provide completly silent mouse operation with reduced effort required
-from user.
+This program can also provide completely silent mouse operation with reduced effort required
+from a user.
 
 ![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/2en.jpg)
 
