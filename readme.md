@@ -79,5 +79,5 @@ Please provide as much information as possible and provide screenshot(s) if appl
 [![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/updatestar.com.jpg)](https://www.updatestar.com/virus-report/clickless-mouse/4021684)
 [![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
 
-## Projects for sale
-[Work by Speech](https://www.sideprojectors.com/project/38542/work-by-speech)<br/>
+## Other Open Source Projects
+[Clickless Mouse](https://github.com/ProperCode/Work-by-Speech)<br/>
