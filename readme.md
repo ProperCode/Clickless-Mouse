@@ -80,4 +80,4 @@ Please provide as much information as possible and provide screenshot(s) if appl
 [![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
 
 ## Other Open Source Projects
-[Clickless Mouse](https://github.com/ProperCode/Work-by-Speech)<br/>
+[Work by Speech](https://github.com/ProperCode/Work-by-Speech)<br/>
