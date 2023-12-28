@@ -78,6 +78,7 @@ Please provide as much information as possible and provide screenshot(s) if appl
 [![Softpedia Clean Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/softpedia_100_free.png)](https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Clickless-Mouse.shtml#status)
 [![Updatestar Clean Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/updatestar.com.jpg)](https://www.updatestar.com/virus-report/clickless-mouse/4021684)
 [![Majorgeeks Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
+[![File Transit 5/5 Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/filetransit_5of5.gif)](http://www.filetransit.com/view.php?id=454284)
 
 ## Other Open Source Projects
 [Work by Speech](https://github.com/ProperCode/Work-by-Speech)<br/>
