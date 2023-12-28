@@ -75,9 +75,9 @@ If you wish to report a bug or send feedback, you can do so by sending me an e-m
 Please provide as much information as possible and provide screenshot(s) if applicable. I usually do not reply.
 
 ## Awards
-[![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/softpedia_100_free.png)](https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Clickless-Mouse.shtml#status)
-[![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/updatestar.com.jpg)](https://www.updatestar.com/virus-report/clickless-mouse/4021684)
-[![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
+[![Softpedia Clean Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/softpedia_100_free.png)](https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Clickless-Mouse.shtml#status)
+[![Updatestar Clean Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/updatestar.com.jpg)](https://www.updatestar.com/virus-report/clickless-mouse/4021684)
+[![Majorgeeks Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
 
 ## Other Open Source Projects
 [Work by Speech](https://github.com/ProperCode/Work-by-Speech)<br/>
