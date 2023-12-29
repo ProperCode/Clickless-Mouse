@@ -1,4 +1,6 @@
-MIT License
+﻿MIT License
+
+Clickless Mouse
 
 Copyright (c) 2019-2023 Mikołaj Magowski
 

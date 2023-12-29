@@ -68,11 +68,9 @@ to run this application.<br/>
 This program can also provide completely silent mouse operation with reduced effort required
 from a user.
 
-![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/2en.jpg)
+## Screenshot
 
-## Bug report and feedback
-If you wish to report a bug or send feedback, you can do so by sending me an e-mail: ![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/email.jpg) .
-Please provide as much information as possible and provide screenshot(s) if applicable. I usually do not reply.
+![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/2en.jpg)
 
 ## Awards
 [![Softpedia Clean Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/softpedia_100_free.png)](https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Clickless-Mouse.shtml#status)
@@ -80,6 +78,10 @@ Please provide as much information as possible and provide screenshot(s) if appl
 [![Updatestar Clean Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/updatestar.com.jpg)](https://www.updatestar.com/virus-report/clickless-mouse/4021684)
 [![Majorgeeks Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
 [![File Transit 5/5 Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/filetransit_5of5.gif)](http://www.filetransit.com/view.php?id=454284)
+
+## Bug report and feedback
+If you wish to report a bug or send feedback, you can do so by sending me an e-mail: ![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/email.jpg) .
+Please provide as much information as possible and provide screenshot(s) if applicable. I usually do not reply.
 
 ## Other Open Source Projects
 [Work by Speech](https://github.com/ProperCode/Work-by-Speech)<br/>

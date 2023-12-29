@@ -1,4 +1,6 @@
-Windows Input Simulator MIT License
+MIT License
+
+Windows Input Simulator
 
 Copyright (c) 2019 Michael Noonan
 
