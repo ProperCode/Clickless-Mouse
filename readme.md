@@ -81,7 +81,7 @@ from a user.
 
 ## Bug report and feedback
 If you wish to report a bug or send feedback, you can do so by sending me an e-mail: ![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/email.jpg) .
-Please provide as much information as possible and provide screenshot(s) if applicable. I usually do not reply.
+Please provide as much information as possible and provide screenshot(s) if applicable.
 
 ## Other Open Source Projects
 [Work by Speech](https://github.com/ProperCode/Work-by-Speech)<br/>
