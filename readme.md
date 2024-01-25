@@ -79,7 +79,7 @@ from a user.
 [![Majorgeeks Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/majorgeektested.gif)](https://www.majorgeeks.com/files/details/clickless_mouse.html)
 [![File Transit 5/5 Award](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/awards/filetransit_5of5.gif)](http://www.filetransit.com/view.php?id=454284)
 
-## Bug report and feedback
+## Bug Report and Feedback
 If you wish to report a bug or send feedback, you can do so by sending me an e-mail: ![alt text](https://raw.githubusercontent.com/ProperCode/clickless-mouse/master/other/images/email.jpg) .
 Please include as much information as possible and provide screenshot(s) if applicable.
 
