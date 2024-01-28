@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clickless_Mouse"
         mc:Ignorable="d"
-        Title="Clickless Mouse" Height="471" Width="641" FontSize="14"
+        Title="Clickless Mouse" Height="512" Width="641" FontSize="14"
         WindowStartupLocation="CenterScreen" Closing="Window_Closing"
         StateChanged="Wmain_StateChanged" ResizeMode="CanMinimize">
     <Grid>
@@ -23,11 +23,10 @@
                 <MenuItem x:Name="MIpolish" Header="Polish" Background="#FFEAEAEA" Click="MIpolish_Click" />
             </MenuItem>
             <MenuItem x:Name="MIhelp" Header="Help">
-                <MenuItem x:Name="MImanual" Header="Manual"  Background="#FFEAEAEA" Click="MImanual_Click"/>
-                <MenuItem x:Name="MIabout" Header="About" Background="#FFEAEAEA" Click="MIabout_Click"/>
-                <MenuItem x:Name="MIchangelog" Header="Changelog" Background="#FFEAEAEA" Click="MIchangelog_Click"/>
-                <MenuItem x:Name="MIupdate" Header="Instructions" Background="#FFEAEAEA" Click="MIupdate_Click"/>
+                <MenuItem x:Name="MImanual" Header="User Guide"  Background="#FFEAEAEA" Click="MImanual_Click"/>
             </MenuItem>
+            <MenuItem x:Name="MIabout" Header="About" Click="MIabout_Click">
+            </MenuItem>            
         </Menu>
         <GroupBox x:Name="GBmain_settings" Header="Main Settings" HorizontalAlignment="Left" Height="271" Margin="10,29,0,0" VerticalAlignment="Top" Width="308" Foreground="Black">
             <Grid>
@@ -46,11 +45,14 @@
 
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="GBother_settings" Header="Other Settings" HorizontalAlignment="Left" Height="115" Margin="10,305,0,0" VerticalAlignment="Top" Width="308">
+        <GroupBox x:Name="GBother_settings" Header="Other Settings" HorizontalAlignment="Left" Height="155" Margin="10,305,0,0" VerticalAlignment="Top" Width="308">
             <Grid>
                 <CheckBox x:Name="CHBrun_at_startup" Content="Run when computer starts" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CHBrun_at_startup_CheckedChanged" Unchecked="CHBrun_at_startup_CheckedChanged"/>
                 <CheckBox x:Name="CHBstart_minimized" Content="Start minimized" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Checked="CHBstart_minimized_CheckedChanged" Unchecked="CHBstart_minimized_CheckedChanged"/>
                 <CheckBox x:Name="CHBminimize_to_tray" Content="Minimize to tray" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Checked="CHBminimize_to_tray_CheckedChanged" Unchecked="CHBminimize_to_tray_CheckedChanged"/>
+                <CheckBox x:Name="CHBcheck_for_updates" Content="Check for updates automatically" 
+                          HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" FontSize="14"
+                          Checked="CHBcheck_for_updates_CheckedChanged" Unchecked="CHBcheck_for_updates_CheckedChanged  "/>
             </Grid>
         </GroupBox>
         <GroupBox x:Name="GBsquare_settings" Header="Squares Settings" HorizontalAlignment="Left" Height="188" Margin="323,33,0,0" VerticalAlignment="Top" Width="291">
@@ -62,8 +64,8 @@
                 <Label x:Name="Lmin_square_size" Content="Minimum size [%]:" HorizontalAlignment="Left" Margin="5,130,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="TBsquare_size" HorizontalAlignment="Left" Height="23" Margin="171,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="TBsquare_size_TextChanged"/>
                 <TextBox x:Name="TBsquare_border"  HorizontalAlignment="Left" Height="23" Margin="171,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextChanged="TBsquare_border_TextChanged"/>
-                <TextBox x:Name="TBsquare_color1" HorizontalAlignment="Left" Height="23" Margin="171,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" TextChanged="TBsquare_color1_TextChanged"  PreviewMouseUp="TBsquare_color1_PreviewMouseUp"/>
-                <TextBox x:Name="TBsquare_color2" HorizontalAlignment="Left" Height="23" Margin="171,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" TextChanged="TBsquare_color2_TextChanged" PreviewMouseUp="TBsquare_color2_PreviewMouseUp"/>
+                <TextBox x:Name="TBsquare_color1" HorizontalAlignment="Left" Height="23" Margin="171,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" PreviewMouseUp="TBsquare_color1_PreviewMouseUp"/>
+                <TextBox x:Name="TBsquare_color2" HorizontalAlignment="Left" Height="23" Margin="171,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" PreviewMouseUp="TBsquare_color2_PreviewMouseUp"/>
                 <TextBox x:Name="TBmin_square_size" HorizontalAlignment="Left" Height="23" Margin="171,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" TextChanged="TBmin_square_size_TextChanged"/>
             </Grid>
         </GroupBox>

@@ -34,9 +34,8 @@ namespace Clickless_Mouse
                 MIenglish.Header = "English";
                 MIpolish.Header = "Polish";
                 MIhelp.Header = "Help";
-                MImanual.Header = "Instructions";
+                MImanual.Header = "User Guide";
                 MIabout.Header = "About";
-                MIupdate.Header = "Update";
                 GBmain_settings.Header = "Main Settings";
                 CHBLMB.Content = "LMB click";
                 CHBRMB.Content = "RMB click";
@@ -51,6 +50,7 @@ namespace Clickless_Mouse
                 CHBrun_at_startup.Content = "Run when computer starts";
                 CHBstart_minimized.Content = "Start minimized";
                 CHBminimize_to_tray.Content = "Minimize to system tray";
+                CHBcheck_for_updates.Content = "Check for updates automatically";
                 GBsquare_settings.Header = "Squares Settings";
                 Lsquare_size.Content = "Size [px]:";
                 Lsquare_border.Content = "Border width [px]:";
@@ -95,7 +95,6 @@ namespace Clickless_Mouse
                 MIhelp.Header = "Pomoc";
                 MImanual.Header = "Instrukcja obsługi";
                 MIabout.Header = "O programie";
-                MIupdate.Header = "Aktualizuj";
                 GBmain_settings.Header = "Ustawienia główne";
                 CHBLMB.Content = "Klik LPM";
                 CHBRMB.Content = "Klik PPM";
@@ -112,6 +111,7 @@ namespace Clickless_Mouse
                 CHBrun_at_startup.Content = "Uruchom przy starcie komputera";
                 CHBstart_minimized.Content = "Uruchom zminimalizowany";
                 CHBminimize_to_tray.Content = "Minimalizuj do zasobnika systemowego";
+                CHBcheck_for_updates.Content = "Automatycznie sprawdzaj aktualizacje";
                 GBsquare_settings.Header = "Ustawienia kwadratów";
                 Lsquare_size.Content = "Rozmiar [px]:";
                 Lsquare_border.Content = "Szerokość krawędzi [px]:";
@@ -151,16 +151,16 @@ namespace Clickless_Mouse
         {
             if(lang == language.en)
             {
-                wm.Title = "Instructions";
+                wm.Title = "User Guide";
 
                 FlowDocument fd = new FlowDocument();
                 Paragraph p1 = new Paragraph();
                 p1.Inlines.Add(new Run("Clickless Mouse makes using a computer easier for people with"
                     + " repetitive strain injury, carpal tunnel syndrome, some motor disabilities and"
                     + " other health problems."
-                    + "\n\nThis application allows to use a mouse without clicking - by moving it only."
-                    + "\nBy reacting to user mouse movements this program simulates left/right mouse"
-                    + " click, double left mouse click and left/right mouse button holding."
+                    + "\n\nThis application allows using a mouse without clicking - by moving it only."
+                    + "\nBy reacting to user mouse movements this program simulates left/right mouse button"
+                    + " click, double left mouse button click and left/right mouse button holding."
                     + "\n\nClickless Mouse can be used with a virtual keyboard to type by moving mouse" +
                     " (e.g. Free Virtual Keyboard: "));
 
@@ -172,8 +172,7 @@ namespace Clickless_Mouse
                 p1.Inlines.Add(link);
 
                 p1.Inlines.Add(new Run(").\n\nBy using Clickless Mouse with a virtual keyboard " +
-                    "the user "
-                    + "can fully control a computer by moving mouse with a palm."
+                    "a user can fully control a computer by moving a mouse."
                     + "\n\nWhen you want to click/hold a mouse button: stop moving the mouse"
                     + ", wait for the squares to appear and move the mouse cursor to the chosen square:"));
 
@@ -213,7 +212,7 @@ namespace Clickless_Mouse
                     + "\nSquares size don't decrease if the mouse cursor is so close to the edge" +
                     " of the screen that smallest size isn't enough to show a square."
                     + "\n\nThe squares that aren't needed can be disabled."
-                    + "\n\nScreen panning - when this mode is on, moving the mouse curor to the " +
+                    + "\n\nScreen panning - when this mode is on, moving the mouse cursor to the " +
                     "edges of" +
                     " the screen presses keys: up at top edge, down at bottom edge, " +
                     "left at left edge, " +
@@ -301,8 +300,7 @@ namespace Clickless_Mouse
                 p1.Inlines.Add(link);
 
                 p1.Inlines.Add(new Run(").\n\nUżywając Clickless Mouse wraz z wirtualną klawiaturą"
-                    + " użytkownik może w pełni kontrolować komputer poprzez poruszanie myszką za " +
-                    "pomocą dłoni."
+                    + " użytkownik może w pełni kontrolować komputer poprzez poruszanie myszką."
                     + "\n\nKiedy chcesz kliknąć/przytrzymać przycisk myszy:"
                     + " zatrzymaj myszkę, poczekaj aż pojawią się kwadraty, a następnie przesuń"
                     + " kursor do wybranego kwadratu:"));

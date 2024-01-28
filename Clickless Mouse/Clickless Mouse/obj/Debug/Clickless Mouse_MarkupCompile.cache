@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\App.xaml
-3171371057
+5-1740763949
 
-14-1848105847
+16652942715
 14-777801593
-MainWindow.xaml;WindowManual.xaml;WindowChangelog.xaml;
+MainWindow.xaml;WindowAbout.xaml;WindowEULA.xaml;WindowManual.xaml;WindowChangelog.xaml;
 
 False
 

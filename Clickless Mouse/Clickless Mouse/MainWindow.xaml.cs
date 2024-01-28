@@ -11,6 +11,8 @@ using System.Globalization;
 using System.Windows.Threading;
 using WindowsInput;
 using WindowsInput.Native;
+using System.Net;
+using System.Windows.Media;
 
 namespace Clickless_Mouse
 {
@@ -59,12 +61,18 @@ namespace Clickless_Mouse
         int border_width;
         System.Drawing.Color color1 = System.Drawing.Color.FromArgb(default_color1); //square color 1
         System.Drawing.Color color2 = System.Drawing.Color.FromArgb(default_color2); //square color 2
+        string square_color1_str;
+        string square_color2_str;
         int min_square_size_percents = default_min_square_size_percents; //how much square size can
                                    //be decreased if it would be covered by left or right screen edge
         //----------------------------------
 
         const string prog_name = "Clickless Mouse";
-        const string prog_version = "2.1";
+        const string prog_version = "2.2";
+        const string url_latest_version = "https://raw.githubusercontent.com/ProperCode/Clickless-Mouse/master/other/latest_version.txt";
+        const string url_homepage = "github.com/ProperCode/Clickless-Mouse";
+        string latest_version = "";
+        const string copyright_text = "Copyright © 2019 - 2024 Mikołaj Magowski. All rights reserved.";
         string settings_filename = "settings.txt";
 
         Square SL, SR, SM, SLH, SRH;
@@ -143,6 +151,9 @@ namespace Clickless_Mouse
 
             CenterWindowOnScreen();
 
+            TBsquare_color1.IsReadOnly = true;
+            TBsquare_color2.IsReadOnly = true;
+
             THRmouse_monitor = new Thread(new ThreadStart(monitor_mouse));
             THRmouse_monitor.Priority = ThreadPriority.Highest;
             THRmouse_monitor.Start();
@@ -218,12 +229,13 @@ namespace Clickless_Mouse
 
             //Checkboxes Checked and Unchecked events work only after form is loaded
             //so they have to be called manually in order to restore settings before form is loaded
-            CHBLMB_CheckedChanged(new object(), new RoutedEventArgs());
-            CHBRMB_CheckedChanged(new object(), new RoutedEventArgs());
-            CHBdoubleLMB_CheckedChanged(new object(), new RoutedEventArgs());
-            CHBholdLMB_CheckedChanged(new object(), new RoutedEventArgs());
-            CHBholdRMB_CheckedChanged(new object(), new RoutedEventArgs());
-            CHBscreen_panning_CheckedChanged(new object(), new RoutedEventArgs());
+            CHBLMB_CheckedChanged(null, null);
+            CHBRMB_CheckedChanged(null, null);
+            CHBdoubleLMB_CheckedChanged(null, null);
+            CHBholdLMB_CheckedChanged(null, null);
+            CHBholdRMB_CheckedChanged(null, null);
+            CHBscreen_panning_CheckedChanged(null, null);
+            CHBcheck_for_updates_CheckedChanged(null, null);
 
             TBcursor_idle_before_squares_appear.Text = default_cursor_idle_time_ms.ToString();
             TBtime_to_start_mouse.Text = default_time_to_start_mouse_movement_ms.ToString();
@@ -232,11 +244,38 @@ namespace Clickless_Mouse
             CHBrun_at_startup.IsChecked = false;
             CHBstart_minimized.IsChecked = false;
             CHBminimize_to_tray.IsChecked = false;
+            CHBcheck_for_updates.IsChecked = false;
 
             TBsquare_size.Text = default_size.ToString();
             TBsquare_border.Text = default_border_width.ToString();
-            TBsquare_color1.Text = default_color1.ToString();
-            TBsquare_color2.Text = default_color2.ToString();
+            
+            square_color1_str = default_color1.ToString();
+            square_color2_str = default_color2.ToString();
+
+            int argb = Convert.ToInt32(square_color1_str);
+
+            byte[] values = BitConverter.GetBytes(argb);
+
+            byte a = values[3];
+            byte r = values[2];
+            byte g = values[1];
+            byte b = values[0];
+
+            TBsquare_color1.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+            color1 = System.Drawing.Color.FromArgb(a, r, g, b);
+
+            argb = Convert.ToInt32(square_color2_str);
+
+            values = BitConverter.GetBytes(argb);
+
+            a = values[3];
+            r = values[2];
+            g = values[1];
+            b = values[0];
+
+            TBsquare_color2.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+            color2 = System.Drawing.Color.FromArgb(a, r, g, b);
+
             TBmin_square_size.Text = default_min_square_size_percents.ToString();
 
             TBscreen_size.Text = "";
@@ -1160,7 +1199,7 @@ namespace Clickless_Mouse
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MIexit_Click(new object(), new RoutedEventArgs());
+            MIexit_Click(null, null);
         }
 
         private void MIexit_Click(object sender, RoutedEventArgs e)
@@ -1175,9 +1214,39 @@ namespace Clickless_Mouse
         private void MIdefault_colors_Click(object sender, RoutedEventArgs e)
         {
             saving_enabled = false; //to avoid multiple saves
-            TBsquare_color1.Text = default_color1.ToString();
+
+            square_color1_str = default_color1.ToString();
+            square_color2_str = default_color2.ToString();
+
+            int argb = Convert.ToInt32(square_color1_str);
+
+            byte[] values = BitConverter.GetBytes(argb);
+
+            byte a = values[3];
+            byte r = values[2];
+            byte g = values[1];
+            byte b = values[0];
+
+            TBsquare_color1.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+            color1 = System.Drawing.Color.FromArgb(a, r, g, b);
+
+            argb = Convert.ToInt32(square_color2_str);
+
+            values = BitConverter.GetBytes(argb);
+
+            a = values[3];
+            r = values[2];
+            g = values[1];
+            b = values[0];
+
+            TBsquare_color2.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+            color2 = System.Drawing.Color.FromArgb(a, r, g, b);
+
+            regenerate_squares();
+
             saving_enabled = true;
-            TBsquare_color2.Text = default_color2.ToString();
+
+            save_settings();
         }
 
         private void MIdefault_settings_Click(object sender, RoutedEventArgs e)
@@ -1215,18 +1284,35 @@ namespace Clickless_Mouse
 
         private void MIabout_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show(about_content, about_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+            try
+            {
+                string content;
+                MyWebClient wc = new MyWebClient();
+                content = wc.DownloadString(url_latest_version);
 
-        private void MIchangelog_Click(object sender, RoutedEventArgs e)
-        {
-            WindowChangelog wc = new WindowChangelog();
-            wc.Show();
-        }
+                latest_version = content.Replace("\r\n", "").Trim();
+            }
+            catch (WebException we)
+            {
+                latest_version = "unknown";
+            }
 
-        private void MIupdate_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://github.com/ProperCode/clickless-mouse");
+            try
+            {
+                WindowAbout w = new WindowAbout();
+
+                w.Lprogram_name.Content = prog_name;
+                w.Llatest_version.Content = "Latest version: " + latest_version;
+                w.Linstalled_version.Content = "Installed version: " + prog_version;
+                w.Lhomepage.Content = url_homepage;
+                w.Lcopyright.Content = copyright_text;
+                
+                w.Show();
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void CHBLMB_CheckedChanged(object sender, RoutedEventArgs e)
@@ -1353,6 +1439,19 @@ namespace Clickless_Mouse
                 screen_panning = false;
                 THRmouse_monitor2.Abort();
                 THRmouse_monitor2 = null;
+            }
+
+            if (saving_enabled)
+            {
+                save_settings();
+            }
+        }
+
+        private void CHBcheck_for_updates_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            if((bool)CHBcheck_for_updates.IsChecked)
+            {
+                update_app_if_necessary();
             }
 
             if (saving_enabled)
@@ -1605,65 +1704,30 @@ namespace Clickless_Mouse
             }
         }
 
-        private void TBsquare_color1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            try
-            {
-                if (TBsquare_color1.Text.Length > 0 && TBsquare_color1.Text != "-")
-                {
-                    int x = int.Parse(TBsquare_color1.Text);
-                    if (x > -1)
-                    {
-                        TBsquare_color1.Text = default_color1.ToString();
-                        throw new Exception(argb_error + ".");
-                    }
-                    else if (x == -1)
-                        color1 = System.Drawing.Color.FromArgb(-2); //-1 is bugged
-                    else
-                        color1 = System.Drawing.Color.FromArgb(x);
-
-                    if (saving_enabled)
-                    {
-                        regenerate_squares();
-                        save_settings();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message, error_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        ColorDialog colorDialog1 = new ColorDialog();
+        ColorDialog colorDialog1 = new ColorDialog();        
 
         ColorDialog colorDialog2 = new ColorDialog();
 
         private void TBsquare_color1_PreviewMouseUp(object sender, MouseButtonEventArgs e)
         {
-            DialogResult dr = colorDialog1.ShowDialog();
-            if (dr == System.Windows.Forms.DialogResult.OK)
-            {
-                TBsquare_color1.Text = colorDialog1.Color.ToArgb().ToString();
-            }
-        }
-
-        private void TBsquare_color2_TextChanged(object sender, TextChangedEventArgs e)
-        {
             try
             {
-                if (TBsquare_color2.Text.Length > 0 && TBsquare_color2.Text != "-")
+                System.Windows.Forms.DialogResult dr = colorDialog1.ShowDialog();
+                if (dr == System.Windows.Forms.DialogResult.OK)
                 {
-                    int x = int.Parse(TBsquare_color2.Text);
-                    if (x > -1)
-                    {
-                        TBsquare_color2.Text = default_color2.ToString();
-                        throw new Exception(argb_error + ".");
-                    }
-                    else if (x == -1)
-                        color2 = System.Drawing.Color.FromArgb(-2); //-1 is bugged
-                    else
-                        color2 = System.Drawing.Color.FromArgb(x);
+                    int argb = Convert.ToInt32(colorDialog1.Color.ToArgb().ToString());
+
+                    byte[] values = BitConverter.GetBytes(argb);
+
+                    byte a = values[3];
+                    byte r = values[2];
+                    byte g = values[1];
+                    byte b = values[0];
+
+                    TBsquare_color1.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+                    color1 = System.Drawing.Color.FromArgb(a, r, g, b);
+
+                    square_color1_str = argb.ToString();
 
                     if (saving_enabled)
                     {
@@ -1674,16 +1738,41 @@ namespace Clickless_Mouse
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message, error_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void TBsquare_color2_PreviewMouseUp(object sender, MouseButtonEventArgs e)
         {
-            DialogResult dr = colorDialog2.ShowDialog();
-            if (dr == System.Windows.Forms.DialogResult.OK)
+            try
             {
-                TBsquare_color2.Text = colorDialog2.Color.ToArgb().ToString();
+                System.Windows.Forms.DialogResult dr = colorDialog2.ShowDialog();
+                if (dr == System.Windows.Forms.DialogResult.OK)
+                {
+                    int argb = Convert.ToInt32(colorDialog2.Color.ToArgb().ToString());
+
+                    byte[] values = BitConverter.GetBytes(argb);
+
+                    byte a = values[3];
+                    byte r = values[2];
+                    byte g = values[1];
+                    byte b = values[0];
+
+                    TBsquare_color2.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+                    color2 = System.Drawing.Color.FromArgb(a, r, g, b);
+
+                    square_color2_str = argb.ToString();
+
+                    if (saving_enabled)
+                    {
+                        regenerate_squares();
+                        save_settings();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -1749,7 +1838,7 @@ namespace Clickless_Mouse
                     double area =  a * b;
                     double pixel_size_mm = area / (x * y) * Math.Pow(25.4, 2);
 
-                    TBsquare_size.Text = Math.Round(50 * 0.06939 / pixel_size_mm).ToString();
+                    TBsquare_size.Text = Math.Round(50 * 0.0771 / pixel_size_mm).ToString();
                     TBsquare_border.Text = Math.Round(2 * 0.06939 / pixel_size_mm).ToString();
 
                     regenerate_squares();
@@ -1786,16 +1875,18 @@ namespace Clickless_Mouse
                 sw.WriteLine(CHBrun_at_startup.IsChecked);
                 sw.WriteLine(CHBstart_minimized.IsChecked);
                 sw.WriteLine(CHBminimize_to_tray.IsChecked);
-
+                
                 sw.WriteLine(TBsquare_size.Text);
                 sw.WriteLine(TBsquare_border.Text);
-                sw.WriteLine(TBsquare_color1.Text);
-                sw.WriteLine(TBsquare_color2.Text);
-                sw.WriteLine(TBmin_square_size.Text);
+                sw.WriteLine(square_color1_str);
+                sw.WriteLine(square_color2_str);
+                sw.WriteLine(TBmin_square_size.Text);                
 
                 sw.WriteLine(TBscreen_size.Text);
 
                 sw.WriteLine(lang.ToString());
+
+                sw.WriteLine(CHBcheck_for_updates.IsChecked);
 
                 sw.Close();
                 fs.Close();
@@ -1825,6 +1916,16 @@ namespace Clickless_Mouse
             {
                 if (File.Exists(file_path))
                 {
+                    //Checkboxes Checked and Unchecked events work only after form is loaded
+                    //so they have to be called manually in order to load save data properly
+                    CHBLMB_CheckedChanged(null, null);
+                    CHBRMB_CheckedChanged(null, null);
+                    CHBdoubleLMB_CheckedChanged(null, null);
+                    CHBholdLMB_CheckedChanged(null, null);
+                    CHBholdRMB_CheckedChanged(null, null);
+                    CHBscreen_panning_CheckedChanged(null, null);
+                    CHBcheck_for_updates_CheckedChanged(null, null);
+
                     fs = new FileStream(file_path, FileMode.Open, FileAccess.Read);
                     sr = new StreamReader(fs);
 
@@ -1837,29 +1938,49 @@ namespace Clickless_Mouse
                     TBcursor_idle_before_squares_appear.Text = sr.ReadLine();
                     TBtime_to_start_mouse.Text = sr.ReadLine();
                     TBcursor_time_in_square.Text = sr.ReadLine();
-
-                    //Checkboxes Checked and Unchecked events work only after form is loaded
-                    //so they have to be called manually in order to load save data properly
-                    CHBLMB_CheckedChanged(new object(), new RoutedEventArgs());
-                    CHBRMB_CheckedChanged(new object(), new RoutedEventArgs());
-                    CHBdoubleLMB_CheckedChanged(new object(), new RoutedEventArgs());
-                    CHBholdLMB_CheckedChanged(new object(), new RoutedEventArgs());
-                    CHBholdRMB_CheckedChanged(new object(), new RoutedEventArgs());
-                    CHBscreen_panning_CheckedChanged(new object(), new RoutedEventArgs());
-
+                    
                     CHBrun_at_startup.IsChecked = bool.Parse(sr.ReadLine());
                     CHBstart_minimized.IsChecked = bool.Parse(sr.ReadLine());
                     CHBminimize_to_tray.IsChecked = bool.Parse(sr.ReadLine());
 
                     TBsquare_size.Text = sr.ReadLine();
                     TBsquare_border.Text = sr.ReadLine();
-                    TBsquare_color1.Text = sr.ReadLine();
-                    TBsquare_color2.Text = sr.ReadLine();
-                    TBmin_square_size.Text = sr.ReadLine();
+                    square_color1_str = sr.ReadLine();
+                    square_color2_str = sr.ReadLine();
 
+                    int argb = Convert.ToInt32(square_color1_str);
+
+                    byte[] values = BitConverter.GetBytes(argb);
+
+                    byte a = values[3];
+                    byte r = values[2];
+                    byte g = values[1];
+                    byte b = values[0];
+
+                    TBsquare_color1.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+                    color1 = System.Drawing.Color.FromArgb(a, r, g, b);
+                    
+                    argb = Convert.ToInt32(square_color2_str);
+
+                    values = BitConverter.GetBytes(argb);
+
+                    a = values[3];
+                    r = values[2];
+                    g = values[1];
+                    b = values[0];
+
+                    TBsquare_color2.Background = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+                    color2 = System.Drawing.Color.FromArgb(a, r, g, b);
+
+                    TBmin_square_size.Text = sr.ReadLine();
                     TBscreen_size.Text = sr.ReadLine();
 
                     Enum.TryParse(sr.ReadLine(), out lang);
+
+                    if(sr.EndOfStream == false) //support old settings file
+                    {
+                        CHBcheck_for_updates.IsChecked = bool.Parse(sr.ReadLine());
+                    }
 
                     sr.Close();
                     fs.Close();
@@ -1878,6 +1999,57 @@ namespace Clickless_Mouse
                         fs.Close();
                 }
                 catch (Exception ex2) { }
+            }
+        }
+
+        void update_app_if_necessary()
+        {
+            try
+            {
+                string content;
+                MyWebClient wc = new MyWebClient();
+                content = wc.DownloadString(url_latest_version);
+
+                latest_version = content.Replace("\r\n", "").Trim();
+            }
+            catch (WebException we)
+            {
+                latest_version = "unknown";
+            }
+
+            bool update_available = false;
+
+            if (latest_version != "unknown" &&
+                int.Parse(latest_version.Replace(".", "")) > int.Parse(prog_version.Replace(".", "")))
+            {
+                update_available = true;
+            }
+
+            if ((bool)CHBcheck_for_updates.IsChecked && update_available)
+            {
+                MessageBoxResult dialogResult = System.Windows.MessageBox.Show("A new program version" +
+                    " is available. Do you want to download it now?",
+                //    " is available. Do you want to perform an automatic update now?",
+                    "New Version Available", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (dialogResult == MessageBoxResult.Yes)
+                {
+                    //Open download page
+                    Process.Start("https://" + url_homepage);
+                }
+            }
+        }
+
+        private class MyWebClient : WebClient
+        {
+            protected override WebRequest GetWebRequest(Uri uri)
+            {
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+                WebRequest w = base.GetWebRequest(uri);
+                w.Timeout = 3000;
+                return w;
             }
         }
     }

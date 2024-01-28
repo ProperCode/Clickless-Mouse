@@ -18,3 +18,7 @@ C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse
 C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\Clickless Mouse.pdb
 C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowManual.g.cs
 C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowManual.baml
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowAbout.g.cs
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowEULA.g.cs
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowAbout.baml
+C:\Users\m\Documents\Visual Studio 2022\Projects\Clickless Mouse\Clickless Mouse\obj\Debug\WindowEULA.baml

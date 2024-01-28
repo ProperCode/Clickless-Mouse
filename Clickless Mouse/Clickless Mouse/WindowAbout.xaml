@@ -1,0 +1,44 @@
+﻿<Window x:Class="Clickless_Mouse.WindowAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clickless_Mouse"
+        mc:Ignorable="d"
+        Title="About" Height="350" Width="730" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas>
+        <Label x:Name="Lprogram_name" Content="Program name" Canvas.Left="10" Canvas.Top="10"
+                           FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Llatest_version" Content="Latest version:" Canvas.Left="10" Canvas.Top="41"
+                           FontSize="16"/>
+        <Label x:Name="Lcopyright" Content="..." Canvas.Left="10" Canvas.Top="138" FontSize="16"/>
+        <Label x:Name="Lhomepage2" Content="Homepage:" Canvas.Left="10" Canvas.Top="102" FontSize="16"/>
+        <Label x:Name="Linstalled_version" Content="Installed version:" Canvas.Left="10" 
+                           Canvas.Top="72" FontSize="16"/>
+        <Label x:Name="Lhomepage" Content="link" Canvas.Left="97" Canvas.Top="102" FontSize="16" 
+                           Foreground="Blue" PreviewMouseUp="Lhomepage_PreviewMouseUp"
+                           MouseEnter="Lhomepage_MouseEnter" MouseLeave="Lhomepage_MouseLeave"/>
+        <Button Foreground="Black" BorderBrush="Black" x:Name="Bchangelog" Content="Changelog"
+                    Canvas.Left="16" Canvas.Top="184" 
+                    Width="197" Height="46" FontSize="16" Click="Bchangelog_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" 
+                                         StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Foreground="Black" BorderBrush="Black" x:Name="Beula" Content="EULA"
+            Canvas.Left="16" Canvas.Top="244" 
+            Width="197" Height="46" FontSize="16" Click="Beula_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" 
+                                 StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Canvas>
+</Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clickless_Mouse"
         mc:Ignorable="d"
-        Title="Instructions" Height="703" Width="745" WindowStartupLocation="CenterScreen"
+        Title="User Guide" Height="703" Width="745" WindowStartupLocation="CenterScreen"
         FontSize="14" ResizeMode="CanMinimize" Closing="Window_Closing">
     <Grid>
         <RichTextBox x:Name="RTBinstructions" HorizontalAlignment="Left" 

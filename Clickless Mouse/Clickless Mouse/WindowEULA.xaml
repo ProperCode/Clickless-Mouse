@@ -1,0 +1,14 @@
+﻿<Window x:Class="Clickless_Mouse.WindowEULA"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clickless_Mouse"
+        mc:Ignorable="d"
+        Title="EULA" Height="680" Width="730" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBox Name="TB" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" 
+                 Margin="10">
+        </TextBox>
+    </Grid>
+</Window>

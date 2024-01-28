@@ -74,6 +74,12 @@
     <Compile Include="Square.designer.cs">
       <DependentUpon>Square.cs</DependentUpon>
     </Compile>
+    <Compile Include="WindowAbout.xaml.cs">
+      <DependentUpon>WindowAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowEULA.xaml.cs">
+      <DependentUpon>WindowEULA.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowManual.xaml.cs">
       <DependentUpon>WindowManual.xaml</DependentUpon>
     </Compile>
@@ -94,6 +100,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowAbout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowEULA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowManual.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
