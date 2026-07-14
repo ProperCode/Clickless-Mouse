@@ -38,8 +38,8 @@ If the mouse cursor is too close to the top edge of the screen, squares for LMB 
 
 If the mouse cursor is too close to the left/right edge of the screen all squares size decrease so at least 25% of a square is visible. 
 By default decreased square size cannot be lower than 60% of the normal size.
-Squares size don't decrease if the mouse cursor is so close to the edge of 
-the screen that smallest size isn't enough to show a square.<br/>
+Squares size doesn't decrease if the mouse cursor is so close to the edge of 
+the screen that the smallest size isn't enough to show a square.<br/>
 
 The squares that aren't needed can be disabled.<br/>
 
